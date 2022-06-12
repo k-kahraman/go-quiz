@@ -68,7 +68,7 @@ func InitQuiz(flags QuizFlags) Quiz {
 func InitFlags() QuizFlags {
 	defer flag.Parse()
 	return QuizFlags{
-		TimeLimit:    flag.Int("time", 15, "Sets the time limit to given amount in seconds."),
+		TimeLimit:    flag.Int("time", 30, "Sets the time limit to given amount in seconds."),
 		FileName:     flag.String("filename", "./problem.csv", "Path for the Problems CSV file."),
 		CorrectScore: flag.Uint("score", 5, "Score for per correct answer."),
 	}
